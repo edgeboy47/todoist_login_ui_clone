@@ -127,18 +127,7 @@ class _PasswordPageState extends State<PasswordPage> {
                         primary: _controller.text.length == 0
                             ? kDarkRedColour
                             : kRedColour),
-                    onPressed: _controller.text.length == 0
-                        ? () {}
-                        : () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (_) => PasswordPage(
-                                  email: _controller.text,
-                                ),
-                              ),
-                            );
-                          },
+                    onPressed: () {},
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Text(
